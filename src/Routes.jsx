@@ -5,12 +5,21 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { Landpage } from "./screens/landpage/Landpage";
 import { Profile } from "./screens/profile";
 import { CaptureScreen } from "./screens/capture/Capture.jsx";
+import { LandingPage } from "./screens/landpage/LandingPage";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Landpage />,
   },
+  {
+    path: "/landingpage",
+    element: <LandingPage />,
+  },
+  // {
+  //   path: "/sign-in",
+  //   element: <SignIn />,
+  // },
   {
     path: "/:id/*",
     element: <Profile />,

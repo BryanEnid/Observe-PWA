@@ -9,7 +9,7 @@ import { Icon } from "@iconify/react";
 import { Typography } from "@/chadcn/Typography";
 import { NavBar } from "@/components/NavBar";
 
-export const Landpage = () => {
+export const LandingPage = () => {
   // Hooks
   const navigate = useNavigate(); // Get the navigate function
   const { user, signInWithGoogle, signOutUser, createUser, logInWithGoogle } = useAuthentication();
@@ -63,7 +63,7 @@ export const Landpage = () => {
 
   return (
     <div className="flex flex-col h-screen items-center justify-center">
-
+    
       <div className="flex">
         <div className="w-full bg-blue-600 p-10 text-white">
           <div> 
@@ -100,8 +100,8 @@ export const Landpage = () => {
             <img src="https://www.figma.com/file/SmttzZOlFETqjtOu9vUixc/image/9468fda13f2c0b4def6862340ec5be620ad162ef" alt="Image" className="w-36 h-36 m-2" />
           </div>          
           
-          <div className="text-lg text-center justify-center">
-            Welcome to Observe
+          <div className="text-lg text-center justify-center text-blue-400">
+            Let's Dive In!
           </div>
 
           <Button
@@ -148,7 +148,9 @@ export const Landpage = () => {
       
 
 
-     
+          {/* <div className="w-[90vw] overflow-y-auto bg-blue-600 mt-4 p-4 rounded-lg text-white">
+            <pre>{user ? JSON.stringify(user, null, 2) : "no user"}</pre>
+          </div> */}
     </div>
   );
 };
