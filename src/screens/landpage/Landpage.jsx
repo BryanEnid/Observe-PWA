@@ -39,6 +39,8 @@ export const Landpage = () => {
     });
   };
 
+  
+
   const handleUsernameChange = ({ target }) => {
     setChecking(true);
     debounceRef.current?.cancel();
@@ -82,7 +84,7 @@ export const Landpage = () => {
               <Button
                 className="mt-4 text-2xl p-10 font-medium text-blue-600"
                 variant="outline"
-                onClick={user}
+                onClick={handleSignIn} // Connect to handleSignIn function
               >
                 Access in Guest Mode
               </Button>
@@ -107,7 +109,7 @@ export const Landpage = () => {
           <Button
             className="justify-center text-md px-24 py-4 m-16 font-medium text-white bg-blue-600 rounded-full"
             variant="outline"
-            onClick={user}
+            onClick={user ? signOutUser : signInWithGoogle} // Toggle between sign-in and sign-out
           >
             Sign up
           </Button>
@@ -126,7 +128,7 @@ export const Landpage = () => {
             Login
           </Button>
 
-          <div className="text-sm items-center text-center text-blue-600">
+          <div className="text-xs items-center text-center text-blue-600">
             <a href="google.com">Terms of Use | Privacy Policy</a>
           </div>
         </div>
@@ -138,17 +140,128 @@ export const Landpage = () => {
       
       */}
 
-      <div className="flex w-full">
-  
-        <div className="flex w-full bg-red-500 text-center justify-center text-4xl ">
-          Create a New Bucket
+      <div className="flex w-full h-full items-center justify-center">
+
+      {/* <!-- Left Section --> */}
+      <div className="w-3/5 h-full bg-blue-600 p-10 text-white">
+        <div> 
+          <div className="text-4xl font-bold font-Satoshi mb-4 p-10">
+            Observe
+          </div>
+          <div className="mt-4 text-5xl p-10 font-medium">
+            Explore the Sea of Jobs
+          </div>
+          <div className="mt-4 text-2xl p-10">
+            We curate career learning experiences for <br/>
+            curious minds like yours
+          </div>
+          
+          <div className="m-10">
+            <Button
+              className="mt-4 text-2xl p-16 px-20 font-medium text-blue-600"
+              variant="outline"
+              onClick={user ? signOutUser : signInWithGoogle} // Toggle between sign-in and sign-out
+            >
+              Access in Guest Mode
+            </Button>
+          </div>
+
+          <div className="mt-4 text-sm p-10">
+            AI / VR enabled for career immersion purposes.
+          </div>
+        </div>
+      </div>
+
+      {/* <!-- Right Section --> */}
+      <div className="w-2/5 h-full bg-white flex flex-col items-center justify-center m-6">
+        <div className="flex justify-center items-center">
+          <img src="https://www.figma.com/file/SmttzZOlFETqjtOu9vUixc/image/9468fda13f2c0b4def6862340ec5be620ad162ef" alt="Image" className="w-36 h-36 m-2" />
+        </div>          
+        
+        <div className="text-2xl text-center justify-center">
+          Welcome to Observe
         </div>
 
+        <Button
+          className="text-md px-24 m-20 font-medium text-white bg-blue-600 rounded-full"
+          variant="outline"
+          onClick={user ? signOutUser : signInWithGoogle} // Toggle between sign-in and sign-out
+        >
+          Sign up
+        </Button>
+
+        <div className="flex items-center mt-4">
+          <div className="flex-1 border-t border-gray"></div>
+          <span className="mx-3">or</span>
+          <div className="flex-1 border-t border-gray w-1/4"></div>
+        </div>
+
+        <Button
+          className="text-md px-28 py-4 m-16 font-medium text-blue-600 rounded-full"
+          variant="outline"
+          onClick={user}
+        >
+          Login
+        </Button>
+
+        <div className="text-sm items-center text-center text-blue-600">
+          <a href="google.com">Terms of Use | Privacy Policy</a>
+        </div>
       </div>
+      </div>
+
+      {/* 
       
+      ------------ New Playground 3 -------------
+      
+      */}
 
+        <div className="flex w-full h-full items-center justify-center">
 
-     
-    </div>
+        
+        <div className="w-full h-full bg-white flex flex-col items-center justify-center">
+            
+            <div className="flex justify-center items-center">
+              <img src="https://www.figma.com/file/SmttzZOlFETqjtOu9vUixc/image/9468fda13f2c0b4def6862340ec5be620ad162ef" alt="Image" className="w-36 h-36 m-2" />
+            </div>
+            
+            <div className="text-2xl text-center justify-center m-4">
+              Welcome back
+            </div>
+
+            <input
+              type="email"
+              placeholder="Enter your email"
+              className="border rounded p-2 px-20 m-2 text-center"
+            />
+
+            <input
+              type="password"
+              placeholder="Enter password"
+              className="border rounded p-2 px-20 text-center"
+            />
+
+          <div className="flex items-center mt-4">
+              <div className="flex-1 border-t border-gray"></div>
+              <span className="mx-3">or</span>
+              <div className="flex-1 border-t border-gray w-1/4"></div>
+            </div>
+
+            <Button
+              className="text-md px-24 m-2 font-medium text-white bg-blue-600 rounded-full"
+              variant="outline"
+              onClick={signInWithGoogle}
+            >
+              <img src="https://www.figma.com/file/SmttzZOlFETqjtOu9vUixc/image/dcc84ba1cffed7d70c3724602a3e792ea321ae73" alt="Image" className="w-5 h-5 m-4"/>
+              Login with Google
+            </Button>
+
+            <div className="text-xs items-center text-center text-blue-600">
+              <a href="google.com">Terms of Use | Privacy Policy</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
   );
 };
