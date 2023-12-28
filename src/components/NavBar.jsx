@@ -65,6 +65,12 @@ export function NavBar({ createBucket }) {
 								<Icon icon="pepicons-pop:camera" className="pr-1 text-3xl" />
 								Capture
 							</DropdownMenuItem>
+
+							<DropdownMenuItem onClick={() => navigate('/capture/preview')}>
+								<Icon icon="bxs:videos" className="pr-1 text-3xl" />
+								Unlisted videos
+							</DropdownMenuItem>
+
 							<DropdownMenuItem>
 								<Icon icon="fluent:live-24-filled" className="pr-1 text-3xl" />
 								Go Live
