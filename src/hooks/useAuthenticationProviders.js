@@ -61,7 +61,9 @@ export const useAuthenticationProviders = () => {
 	const signInWithGoogle = async () => {
 		// Get from provider
 		const provider = new GoogleAuthProvider();
+		// provider.addScope('https://www.googleapis.com/auth/cloud-platform');
 
+		// return signInWithRedirect(auth, provider);
 		await signInWithPopup(auth, provider);
 	};
 
