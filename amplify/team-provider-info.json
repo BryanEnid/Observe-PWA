@@ -1,0 +1,20 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-observepwa-dev-163420-authRole",
+      "UnauthRoleArn": "arn:aws:iam::971330657154:role/amplify-observepwa-dev-163420-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::971330657154:role/amplify-observepwa-dev-163420-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-observepwa-dev-163420-deployment",
+      "UnauthRoleName": "amplify-observepwa-dev-163420-unauthRole",
+      "StackName": "amplify-observepwa-dev-163420",
+      "StackId": "arn:aws:cloudformation:us-east-1:971330657154:stack/amplify-observepwa-dev-163420/869cc2c0-a8ed-11ee-807f-0e2a0bfcc015",
+      "AmplifyAppId": "d1m6d9hmwe3qus"
+    },
+    "categories": {
+      "auth": {
+        "observepwaee1dcbd2": {}
+      }
+    }
+  }
+}

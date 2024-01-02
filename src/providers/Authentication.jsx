@@ -15,17 +15,13 @@ export const useAuth = () => useContext(AuthContext);
 
 // Create the AuthProvider component
 export function AuthProvider({ children }) {
-	const { user, authToken, isLoading, signInWithGoogle, signOutUser } = useAuthenticationProviders();
+	const { user, authToken, isLoading, signInWithGoogle, signOut } = useAuthenticationProviders();
 
 	// Function to log in
-	const login = () => {
-		// Perform your actual login logic here
-		return signInWithGoogle();
-	};
+	const login = () => signInWithGoogle();
+
 	// Function to log out
-	const logout = () =>
-		// Perform your actual logout logic here
-		signOutUser();
+	const logout = () => signOut();
 
 	// Context value
 	const contextValue = {
