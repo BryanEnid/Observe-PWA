@@ -1,58 +1,42 @@
 {
-  "version": "1",
-  "cognitoConfig": {
-    "identityPoolName": "observepwaee1dcbd2_identitypool_ee1dcbd2",
-    "allowUnauthenticatedIdentities": false,
-    "resourceNameTruncated": "observee1dcbd2",
-    "userPoolName": "observepwaee1dcbd2_userpool_ee1dcbd2",
-    "autoVerifiedAttributes": [
-      "email"
-    ],
-    "mfaConfiguration": "OFF",
-    "mfaTypes": [
-      "SMS Text Message"
-    ],
-    "smsAuthenticationMessage": "Your authentication code is {####}",
-    "smsVerificationMessage": "Your verification code is {####}",
-    "emailVerificationSubject": "Your verification code",
-    "emailVerificationMessage": "Your verification code is {####}",
-    "defaultPasswordPolicy": false,
-    "passwordPolicyMinLength": 8,
-    "passwordPolicyCharacters": [],
-    "requiredAttributes": [
-      "email",
-      "name",
-      "picture"
-    ],
-    "aliasAttributes": [],
-    "userpoolClientGenerateSecret": false,
-    "userpoolClientRefreshTokenValidity": 30,
-    "userpoolClientWriteAttributes": [
-      "email"
-    ],
-    "userpoolClientReadAttributes": [
-      "email"
-    ],
-    "userpoolClientLambdaRole": "observee1dcbd2_userpoolclient_lambda_role",
-    "userpoolClientSetAttributes": false,
-    "sharedId": "ee1dcbd2",
-    "resourceName": "observepwaee1dcbd2",
-    "authSelections": "identityPoolAndUserPool",
-    "useDefault": "defaultSocial",
-    "hostedUI": true,
-    "usernameAttributes": [
-      "email"
-    ],
-    "triggers": {},
-    "hostedUIDomainName": "observe-auth",
-    "authProvidersUserPool": [
-      "Google"
-    ],
-    "hostedUIProviderMeta": "[{\"ProviderName\":\"Google\",\"authorize_scopes\":\"openid email profile\",\"AttributeMapping\":{\"email\":\"email\",\"name\":\"name\",\"picture\":\"picture\",\"username\":\"sub\"}}]",
-    "oAuthMetadata": "{\"AllowedOAuthFlows\":[\"code\"],\"AllowedOAuthScopes\":[\"phone\",\"email\",\"openid\",\"profile\",\"aws.cognito.signin.user.admin\"],\"CallbackURLs\":[\"https://dev.observe.space/\",\"https://www.observe.space/\",\"https://observe.space/\",\"https://localhost:5371/\",\"http://localhost:5731/\"],\"LogoutURLs\":[\"https://dev.observe.space/\",\"https://www.observe.space/\",\"https://localhost:5173/\"]}",
-    "userPoolGroupList": [],
-    "serviceName": "Cognito",
-    "usernameCaseSensitive": false,
-    "useEnabledMfas": true
-  }
+	"version": "1",
+	"cognitoConfig": {
+		"identityPoolName": "observepwaee1dcbd2_identitypool_ee1dcbd2",
+		"allowUnauthenticatedIdentities": false,
+		"resourceNameTruncated": "observee1dcbd2",
+		"userPoolName": "observepwaee1dcbd2_userpool_ee1dcbd2",
+		"autoVerifiedAttributes": ["email"],
+		"mfaConfiguration": "OFF",
+		"mfaTypes": ["SMS Text Message"],
+		"smsAuthenticationMessage": "Your authentication code is {####}",
+		"smsVerificationMessage": "Your verification code is {####}",
+		"emailVerificationSubject": "Your verification code",
+		"emailVerificationMessage": "Your verification code is {####}",
+		"defaultPasswordPolicy": false,
+		"passwordPolicyMinLength": 8,
+		"passwordPolicyCharacters": [],
+		"requiredAttributes": ["email", "name", "picture"],
+		"aliasAttributes": [],
+		"userpoolClientGenerateSecret": false,
+		"userpoolClientRefreshTokenValidity": 30,
+		"userpoolClientWriteAttributes": ["email"],
+		"userpoolClientReadAttributes": ["email"],
+		"userpoolClientLambdaRole": "observee1dcbd2_userpoolclient_lambda_role",
+		"userpoolClientSetAttributes": false,
+		"sharedId": "ee1dcbd2",
+		"resourceName": "observepwaee1dcbd2",
+		"authSelections": "identityPoolAndUserPool",
+		"useDefault": "defaultSocial",
+		"hostedUI": true,
+		"usernameAttributes": ["email"],
+		"triggers": {},
+		"hostedUIDomainName": "observe-auth",
+		"authProvidersUserPool": ["Google"],
+		"hostedUIProviderMeta": "[{\"ProviderName\":\"Google\",\"authorize_scopes\":\"openid email profile\",\"AttributeMapping\":{\"email\":\"email\",\"name\":\"name\",\"picture\":\"picture\",\"username\":\"sub\"}}]",
+		"oAuthMetadata": "{\"AllowedOAuthFlows\":[\"code\"],\"AllowedOAuthScopes\":[\"phone\",\"email\",\"openid\",\"profile\",\"aws.cognito.signin.user.admin\"],\"CallbackURLs\":[\"https://dev.observe.space/\",\"https://www.observe.space/\",\"https://observe.space/\",\"https://localhost:5371/\",\"http://localhost:5731/\"],\"LogoutURLs\":[\"https://dev.observe.space/\",\"https://www.observe.space/\",\"https://localhost:5173/\"]}",
+		"userPoolGroupList": [],
+		"serviceName": "Cognito",
+		"usernameCaseSensitive": false,
+		"useEnabledMfas": true
+	}
 }
