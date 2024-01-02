@@ -6,11 +6,12 @@ import { useLocation, useNavigate } from 'react-router-dom';
 import { Separator } from '@/chadcn/Separator';
 import { cn } from '@/lib/utils';
 import { useAuthenticationProviders } from '@/hooks/useAuthenticationProviders';
+import { useAuth } from '@/providers/Authentication';
 
 export function SideBar() {
 	const navigate = useNavigate();
 	const { pathname } = useLocation();
-	const { user, isLoading } = useAuthenticationProviders();
+	const { user } = useAuth();
 
 	// if (isLoading) return <></>;
 
